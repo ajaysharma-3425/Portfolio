@@ -62,7 +62,7 @@ export default function Footer() {
     <footer className="relative z-10 border-t border-gray-800/50">
       {/* Gradient accent at top */}
       <div className="h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600"></div>
-      
+
       <div className="py-12 px-4 md:px-8 bg-gradient-to-b from-gray-900/50 to-black">
         <div className="max-w-7xl mx-auto">
           {/* Main footer content */}
@@ -74,13 +74,13 @@ export default function Footer() {
                   <FaCode className="w-5 h-5" />
                 </div>
                 <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
-                  Ajay.dev
+                  Ajay Sharma
                 </h3>
               </div>
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 MERN Stack Developer specializing in building modern, scalable web applications with Next.js, React, and Node.js.
               </p>
-              
+
               {/* Tech stack */}
               <div className="flex items-center gap-3">
                 <span className="text-white text-sm">Built with:</span>
@@ -124,8 +124,8 @@ export default function Footer() {
                   <FaEnvelope className="w-4 h-4 text-cyan-400 mt-1 mr-3" />
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <a 
-                      href="mailto:sharmajay07984@gmail.com" 
+                    <a
+                      href="mailto:sharmajay07984@gmail.com"
                       className="text-gray-300 hover:text-cyan-300 transition-colors duration-300 text-sm"
                     >
                       sharmajay07984@gmail.com
@@ -136,9 +136,9 @@ export default function Footer() {
                   <FaCode className="w-4 h-4 text-cyan-400 mt-1 mr-3" />
                   <div>
                     <p className="text-gray-400 text-sm">GitHub</p>
-                    <a 
-                      href="https://github.com/ajaysharma-3425" 
-                      target="_blank" 
+                    <a
+                      href="https://github.com/ajaysharma-3425"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-cyan-300 transition-colors duration-300 text-sm"
                     >
@@ -155,7 +155,7 @@ export default function Footer() {
               <p className="text-gray-400 text-sm mb-6">
                 Interested in collaboration or have a project in mind? Let's build something amazing together.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex gap-3 mb-6">
                 {socialLinks.map((social, index) => (
@@ -213,26 +213,27 @@ export default function Footer() {
 
             {/* Links */}
             <div className="flex items-center gap-6 text-sm">
-              <a 
-                href="/privacy" 
+              <a
+                href="/privacy"
                 className="text-gray-500 hover:text-cyan-300 transition-colors duration-300"
               >
                 Privacy Policy
               </a>
-              <a 
-                href="/terms" 
+              <a
+                href="/terms"
                 className="text-gray-500 hover:text-cyan-300 transition-colors duration-300"
               >
                 Terms of Service
               </a>
-              <a 
-                href="/sitemap" 
+              <a
+                href="/sitemap"
                 className="text-gray-500 hover:text-cyan-300 transition-colors duration-300"
               >
                 Sitemap
               </a>
             </div>
           </div>
+
 
           {/* Floating scroll to top button (mobile) */}
           <motion.button
