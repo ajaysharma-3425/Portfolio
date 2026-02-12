@@ -236,7 +236,7 @@ export default function Navbar() {
                         <SiNextdotjs className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold text-white">Ajay.dev</h2>
+                        <h2 className="text-xl font-bold text-white">Ajay Sharma</h2>
                         <p className="text-sm text-gray-400">
                           MERN Stack Developer
                         </p>

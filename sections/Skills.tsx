@@ -1,21 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
-  FaReact, 
-  FaNodeJs, 
-  FaGitAlt, 
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
   FaServer,
   FaDatabase,
   FaCode,
   FaCloud
 } from "react-icons/fa";
-import { 
-  SiNextdotjs, 
-  SiExpress, 
-  SiMongodb, 
-  SiRedux, 
-  SiTypescript, 
+import {
+  SiNextdotjs,
+  SiExpress,
+  SiMongodb,
+  SiRedux,
+  SiTypescript,
   SiTailwindcss,
   SiJavascript,
   SiGraphql,
@@ -72,7 +72,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 px-4 md:px-8  text-white overflow-hidden relative">
       {/* Background pattern and floating elements */}
-     
+
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
@@ -104,14 +104,13 @@ export default function Skills() {
             >
               {/* Category Header */}
               <div className="flex items-center mb-8">
-                <div className={`p-3 rounded-xl ${
-                  categoryIndex === 0 ? "bg-gradient-to-r from-cyan-500/20 to-blue-600/20" :
-                  categoryIndex === 1 ? "bg-gradient-to-r from-green-500/20 to-emerald-600/20" :
-                  "bg-gradient-to-r from-purple-500/20 to-pink-600/20"
-                } mr-4`}>
+                <div className={`p-3 rounded-xl ${categoryIndex === 0 ? "bg-gradient-to-r from-cyan-500/20 to-blue-600/20" :
+                    categoryIndex === 1 ? "bg-gradient-to-r from-green-500/20 to-emerald-600/20" :
+                      "bg-gradient-to-r from-purple-500/20 to-pink-600/20"
+                  } mr-4`}>
                   {categoryIndex === 0 ? <FaReact className="w-6 h-6 text-cyan-400" /> :
-                   categoryIndex === 1 ? <FaServer className="w-6 h-6 text-green-400" /> :
-                   <FaGitAlt className="w-6 h-6 text-purple-400" />}
+                    categoryIndex === 1 ? <FaServer className="w-6 h-6 text-green-400" /> :
+                      <FaGitAlt className="w-6 h-6 text-purple-400" />}
                 </div>
                 <h3 className="text-2xl font-bold">{category.category}</h3>
               </div>
@@ -135,18 +134,17 @@ export default function Skills() {
                       </div>
                       <span className="text-cyan-300 font-bold text-sm">{skill.level}%</span>
                     </div>
-                    
+
                     {/* Skill Progress Bar */}
                     <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : {}}
                         transition={{ duration: 1, delay: categoryIndex * 0.2 + skillIndex * 0.1 + 0.3 }}
-                        className={`h-full rounded-full ${
-                          categoryIndex === 0 ? "bg-gradient-to-r from-cyan-500 to-blue-600" :
-                          categoryIndex === 1 ? "bg-gradient-to-r from-green-500 to-emerald-600" :
-                          "bg-gradient-to-r from-purple-500 to-pink-600"
-                        }`}
+                        className={`h-full rounded-full ${categoryIndex === 0 ? "bg-gradient-to-r from-cyan-500 to-blue-600" :
+                            categoryIndex === 1 ? "bg-gradient-to-r from-green-500 to-emerald-600" :
+                              "bg-gradient-to-r from-purple-500 to-pink-600"
+                          }`}
                       ></motion.div>
                     </div>
                   </motion.div>
@@ -231,7 +229,9 @@ export default function Skills() {
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-900/30 to-blue-900/30 rounded-full border border-cyan-800/30">
             <div className="w-3 h-3 rounded-full bg-gradient-to-r from-green-400 to-cyan-400 animate-pulse mr-3"></div>
-            <span className="text-cyan-300 font-medium">Currently learning: Advanced Next.js & Microservices</span>
+            <span className="text-cyan-300 font-semibold tracking-wide text-xs sm:text-sm md:text-base">
+              🚀 Currently learning: Advanced Next.js & Microservices
+            </span>
           </div>
         </motion.div>
       </div>

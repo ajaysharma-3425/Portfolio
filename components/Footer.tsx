@@ -175,15 +175,15 @@ export default function Footer() {
               </div>
 
               {/* Back to top button */}
-              <motion.button
+              {/* <motion.button
                 onClick={scrollToTop}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/50 border border-gray-700/50 text-gray-400 hover:text-cyan-300 hover:border-cyan-500/30 transition-all duration-300 text-sm"
               >
                 <FaArrowUp className="w-3 h-3" />
-                Back to Top
-              </motion.button>
+                
+              </motion.button> */}
             </div>
           </div>
 

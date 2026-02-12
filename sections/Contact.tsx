@@ -80,7 +80,7 @@ export default function Contact() {
       icon: <FaPhone className="w-5 h-5" />,
       title: "Phone",
       value: "+91 7990083154",
-      link: "tel:+919876543210",
+      link: "tel:+917990083154",
     },
     {
       icon: <FaMapMarkerAlt className="w-5 h-5" />,
