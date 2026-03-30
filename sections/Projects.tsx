@@ -8,33 +8,34 @@ import { SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiExpress } from "react-i
 import { useInView } from "react-intersection-observer";
 
 // ✅ Projects data – image paths अब सही हैं (public folder के relative)
+// ✅ Fixed Projects data
 export const projects = [
   {
     title: "Bite Club",
     description: "A full-featured food ordering platform built with MERN stack featuring real-time cart, user authentication, payment integration, and admin dashboard.",
     live: "https://bite-club.netlify.app",
     github: "https://github.com/bite-club",
-    image: "/BiteClub.png",          // ✅ public/BiteClub.png
+    image: "/BiteClub.png",
     tech: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT"],
     type: "Full Stack",
     featured: true
   },
   {
     title: "CookBook",
-    description: "A full-featured food ordering platform built with MERN stack featuring real-time cart, user authentication, payment integration, and admin dashboard.",
+    description: "Explore and share delicious recipes with this community-driven platform built for food enthusiasts.",
     live: "https://cookbook-new.vercel.app",
     github: "https://github.com/cookbook",
-    image: "/cookbook.png", // ✅ public/projects/cookbook.jpg
+    image: "/cookbook.png",
     tech: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT"],
     type: "Full Stack",
     featured: true
   },
   {
     title: "Animal Web",
-    description: "A full-featured food ordering platform built with MERN stack featuring real-time cart, user authentication, payment integration, and admin dashboard.",
+    description: "An interactive web portal dedicated to animal welfare, showcasing different species and adoption information.",
     live: "https://animalwebnew.vercel.app",
     github: "https://github.com/animalweb",
-    image: "/animalWeb.png", // ✅ public/projects/animalweb.jpg
+    image: "/animalWeb.png",
     tech: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT"],
     type: "Full Stack",
     featured: true
@@ -44,7 +45,7 @@ export const projects = [
     description: "Secure cloud-based notes application with CRUD operations, user authentication, and rich text editing capabilities.",
     live: "https://inotebooknew.netlify.app",
     github: "https://github.com/",
-    image: "/inotbook.png", // ✅ public/projects/inotebook.jpg
+    image: "/inotbook.png",
     tech: ["React", "Node.js", "Express", "MongoDB", "Bootstrap"],
     type: "Full Stack",
     featured: true
@@ -54,9 +55,28 @@ export const projects = [
     description: "Advanced text utility application offering multiple tools including word counter, case converter, text summarizer, and formatting utilities.",
     live: "https://text-utils-apk.vercel.app",
     github: "https://github.com/TextUtilsApk",
-    image: "/textutils.png", // ✅ public/projects/text-utils.jpg
+    image: "/textutils.png",
     tech: ["React", "JavaScript", "CSS3", "Bootstrap"],
     type: "Frontend",
+    featured: true
+  }, // ✅ यहाँ से फालतू कोमा हटा दिया गया है
+  {
+    title: "Deskify Online Shopping Web.",
+    description: "A premium e-commerce experience for office furniture and workspace essentials with seamless checkout.",
+    live: "https://deskify-new-n9eh.vercel.app/",
+    github: "https://github.com/DeskifyNew",
+    image: "/Deskify.png",
+    tech: ["React", "JavaScript", "CSS3", "Bootstrap"],
+    type: "Full Stack",
+    featured: true
+  },{
+    title: "Minal Footwear Premium",
+    description: "A luxury footwear e-commerce experience featuring high-end brand curation, smooth framer-motion animations, and a fully responsive 'Mobile-First' design architecture.",
+    live: "https://minalfootwear.vercel.app/",
+    github: "https://github.com/StaticFootwear",
+    image: "/minal-footwear.png", // Aapne jo naya hero section banaya hai uska screenshot
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React"],
+    type: "Full Stack",
     featured: true
   },
   {
@@ -64,7 +84,7 @@ export const projects = [
     description: "Modern responsive portfolio website built with Next.js 14, featuring animations, dark mode, and SEO optimization.",
     live: "#",
     github: "https://github.com/Portfolio",
-    image: "/portfolio.png", // ✅ public/projects/portfolio.jpg
+    image: "/portfolio.png",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     type: "Frontend",
     featured: false
@@ -74,7 +94,7 @@ export const projects = [
     description: "RESTful API for e-commerce platform with product management, user authentication, and order processing.",
     live: "#",
     github: "https://github.com/",
-    image: "/projects/ecommerce-api.jpg", // ✅ public/projects/ecommerce-api.jpg
+    image: "/projects/ecommerce-api.jpg",
     tech: ["Node.js", "Express", "MongoDB", "JWT", "Stripe"],
     type: "Backend",
     featured: false
@@ -84,7 +104,7 @@ export const projects = [
     description: "Productivity application with task management, team collaboration features, and real-time notifications.",
     live: "#",
     github: "https://github.com/",
-    image: "/projects/task-manager.jpg", // ✅ public/projects/task-manager.jpg
+    image: "/projects/task-manager.jpg",
     tech: ["React", "Firebase", "Material-UI", "Context API"],
     type: "Full Stack",
     featured: false
@@ -175,13 +195,12 @@ export default function Projects() {
                     {/* Project Type Badge */}
                     <div className="absolute top-4 right-4">
                       <span
-                        className={`px-3 py-1 rounded-full text-xs font-bold ${
-                          project.type === "Full Stack"
-                            ? "bg-cyan-900/50 text-cyan-300 border border-cyan-700/50"
-                            : project.type === "Frontend"
+                        className={`px-3 py-1 rounded-full text-xs font-bold ${project.type === "Full Stack"
+                          ? "bg-cyan-900/50 text-cyan-300 border border-cyan-700/50"
+                          : project.type === "Frontend"
                             ? "bg-blue-900/50 text-blue-300 border border-blue-700/50"
                             : "bg-purple-900/50 text-purple-300 border border-purple-700/50"
-                        }`}
+                          }`}
                       >
                         {project.type}
                       </span>

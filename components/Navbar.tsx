@@ -23,8 +23,8 @@ const navLinks = [
   { name: "Home", href: "#home", icon: <FiHome className="w-4 h-4" /> },
   { name: "About", href: "#about", icon: <FiUser className="w-4 h-4" /> },
   { name: "Skills", href: "#skills", icon: <FiCode className="w-4 h-4" /> },
-  { name: "Projects", href: "#projects", icon: <FiBriefcase className="w-4 h-4" /> },
   { name: "Experience", href: "#experience", icon: <FiCode className="w-4 h-4" /> },
+  { name: "Projects", href: "#projects", icon: <FiBriefcase className="w-4 h-4" /> },
   { name: "Contact", href: "#contact", icon: <FiMail className="w-4 h-4" /> },
 ];
 
